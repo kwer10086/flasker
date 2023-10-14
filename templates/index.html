@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>HOMEPAGE</title>
+        <style>
+            h1{
+                color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>{{ stuffs|title|safe }}</p>
+        <h1>My Subjects</h1>
+        <p>{% for item in context['my_list'] %}</p>
+            {{ item }}
+        <p>{% endfor%}</p>
+        {{ context['my_list'].0 }}
+    </body>
+</html>
